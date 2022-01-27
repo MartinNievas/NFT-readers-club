@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/NFT-readers-club/static/css/main.073c9b0a.css",
+    "main.js": "/NFT-readers-club/static/js/main.f1bd7980.js",
+    "static/js/787.76b15326.chunk.js": "/NFT-readers-club/static/js/787.76b15326.chunk.js",
+    "static/media/logo.svg": "/NFT-readers-club/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/NFT-readers-club/index.html",
+    "main.073c9b0a.css.map": "/NFT-readers-club/static/css/main.073c9b0a.css.map",
+    "main.f1bd7980.js.map": "/NFT-readers-club/static/js/main.f1bd7980.js.map",
+    "787.76b15326.chunk.js.map": "/NFT-readers-club/static/js/787.76b15326.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.f1bd7980.js"
+  ]
+}
