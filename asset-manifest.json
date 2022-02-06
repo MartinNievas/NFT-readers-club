@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/NFT-readers-club/static/css/main.4f906861.css",
-    "main.js": "/NFT-readers-club/static/js/main.55fcb831.js",
+    "main.css": "/NFT-readers-club/static/css/main.eb82997e.css",
+    "main.js": "/NFT-readers-club/static/js/main.000f5081.js",
     "static/js/787.76b15326.chunk.js": "/NFT-readers-club/static/js/787.76b15326.chunk.js",
     "static/media/bookcase.jpg": "/NFT-readers-club/static/media/bookcase.4aced4e8fa90b2a7645b.jpg",
     "static/media/logo.svg": "/NFT-readers-club/static/media/logo.73cd8ceaa3dae04cf49bca63800d6055.svg",
     "index.html": "/NFT-readers-club/index.html",
-    "main.4f906861.css.map": "/NFT-readers-club/static/css/main.4f906861.css.map",
-    "main.55fcb831.js.map": "/NFT-readers-club/static/js/main.55fcb831.js.map",
+    "main.eb82997e.css.map": "/NFT-readers-club/static/css/main.eb82997e.css.map",
+    "main.000f5081.js.map": "/NFT-readers-club/static/js/main.000f5081.js.map",
     "787.76b15326.chunk.js.map": "/NFT-readers-club/static/js/787.76b15326.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f906861.css",
-    "static/js/main.55fcb831.js"
+    "static/css/main.eb82997e.css",
+    "static/js/main.000f5081.js"
   ]
 }
