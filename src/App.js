@@ -150,13 +150,18 @@ function App() {
           <span className="block text-amber-600 xl:inline">NFT</span>
         </h1>
         <p className="text-xl pt-10 tracking-tight font-extrabold text-gray-900">
-        <span className="block text-amber-600 xl:inline">Nota importante:</span>{' '}
-        <span className="inline-block">No utilicen su wallet principal, creen una wallet separada para estas cosas random, en metamask son gratis.</span>
+        <span className="block text-amber-600 xl:inline">Notas importantes:</span>
         <br/>
-        <span className="inline-block">Con la wallet pueden ir a la testnet de Rinkeby en </span>{' '}
+        <span className="inline-block">- No utilicen su wallet principal, creen una wallet separada para estas cosas random, en metamask son gratis.</span>
+        <br/>
+        <span className="inline-block">- En la </span>
+        <a className="text-green-500" href = "https://metamask.zendesk.com/hc/en-us/articles/360015289452-How-to-Create-an-Additional-Account-in-your-MetaMask-Wallet"> ayuda </a>{' '}
+        <span className="inline-block">de Metamask hay una guía para crear nuevas cuentas.</span>
+        <br/>
+        <span className="inline-block">- Con la wallet pueden ir a la testnet de Rinkeby en </span>{' '}
         <a className="text-green-500" href = "https://testnets.opensea.io/">OpenSea</a>{' '}
         <span className="inline-block">y ver todos los NFT que tienen.</span>{' '}
-        <span className="inline-block">Para interactuar con la página necesitan Fake ETH, lo pueden conseguir en los Faucets. El de </span>{' '}
+        <span className="inline-block">- Para interactuar con la página necesitan Fake ETH, lo pueden conseguir en los Faucets. El de </span>{' '}
         <a className="text-green-500" href = "https://faucets.chain.link/rinkeby">ChainLink</a>{' '}
         <span className="inline-block">suele ser el que mejor funciona.</span>{' '}
         </p>
@@ -170,7 +175,7 @@ function App() {
       </div>
       <div class="container mx-auto px-4 py-8">
         <p className="text-l pt-2 pb-10 tracking-tight font-extrabold text-gray-900">
-        <span className="inline-block">¿Por qué sale 0.02 ETH cada NFT? Hacer deploy de los contratos cuesta ETH, y algunos faucets solo dejan un pedido por día, así que es una buena forma de recaudar Fake ETH para seguir haciendo pruebas :D.</span>{' '}
+        <span className="inline-block">¿Por qué sale 0.02 ETH cada NFT? Hacer deploy de los contratos cuesta ETH, y algunos faucets solo dejan un pedido por día, así que es una buena forma de recaudar Fake ETH para seguir haciendo pruebas :D</span>{' '}
         <br/>
         <span className="inline-block">Si en la </span>{' '}
         <a className="text-green-700" href = "https://rinkeby.etherscan.io/address/0x9a42f627c643331b765449A2Fd22AdFE509Befe3">wallet</a>{' '}
