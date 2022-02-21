@@ -1,6 +1,7 @@
 import './App.css';
 import Iframe from './components/Iframe';
-import React,{ Fragment } from 'react'
+import ReactGA from 'react-ga';
+import React,{ Fragment, useEffect } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/outline'
 import bookcase from './images/bookcase.jpg'
@@ -33,6 +34,12 @@ const navigation = [
 ]
 
 function App() {
+
+  useEffect(() => {
+    ReactGA.initialize('G-Z97DCMWZ3J');
+    ReactGA.pageview("landing page");
+  })
+
   return (
     <div className="relative bg-white overflow-hidden px-8 py-4">
       <div className="relative bg-white overflow-hidden">
