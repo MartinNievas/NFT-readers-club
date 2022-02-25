@@ -3,9 +3,13 @@ import Iframe from './components/Iframe';
 import ReactGA from 'react-ga';
 import React,{ Fragment, useEffect } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import { XIcon } from '@heroicons/react/outline'
+import { AdjustmentsIcon, XIcon } from '@heroicons/react/outline'
 import bookcase from './images/bookcase.jpg'
 import logo from './images/logo.svg'
+
+const item_5am = {
+    libro: '<iframe src="https://cloudflare-ipfs.com/ipfs/bafybeib6q6q2a4ibiwfq657suynze7r4a3kyh6cuhvkga2sc4gjez2rz2y?contract=0xb1765a97d10C1850f7236cE3B2093325d5dE5431&chainId=4&tokenId=5" width="600px" height="600px" style="max-width:100%;" frameborder="0" />',
+  }
 
 const items = [
   {
@@ -23,9 +27,6 @@ const items = [
   {
     libro: '<iframe src="https://cloudflare-ipfs.com/ipfs/bafybeib6q6q2a4ibiwfq657suynze7r4a3kyh6cuhvkga2sc4gjez2rz2y?contract=0xb1765a97d10C1850f7236cE3B2093325d5dE5431&chainId=4&tokenId=4" width="600px" height="600px" style="max-width:100%;" frameborder="0" />',
   }
-
-
-
 ]
 
 const navigation = [
@@ -34,10 +35,11 @@ const navigation = [
 ]
 
 function App() {
+  var curTime = new Date().getHours();
 
   useEffect(() => {
-    ReactGA.initialize('G-Z97DCMWZ3J');
-    ReactGA.pageview("landing page");
+    ReactGA.initialize('UA-98385505-3');
+    ReactGA.pageview(window.location.pathname);
   })
 
   return (
@@ -151,7 +153,7 @@ function App() {
           />
         </div>
       </div>
-      <div class="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
           <span className="inline-block">Claim your</span>{' '}
           <span className="block text-amber-600 xl:inline">NFT</span>
@@ -173,14 +175,21 @@ function App() {
         <span className="inline-block">suele ser el que mejor funciona.</span>{' '}
         </p>
       </div>
-      <div class="container mx-auto px-4 py-8">
-        <div class="columns-3xs lg">
+      <div className="container mx-auto px-4 py-8">
+        {
+        curTime >= 5 && curTime <=6 &&
+        <>
+          <h1>It seems that you woke up early this morning... here is your NFT</h1>
+          <Iframe iframe={item_5am.libro} />
+        </>
+        }
+        <div className="columns-3xs lg">
           {items.map((item) => (
             <Iframe iframe={item.libro} />
           ))}
         </div>
       </div>
-      <div class="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8">
         <p className="text-l pt-2 pb-10 tracking-tight font-extrabold text-gray-900">
         <span className="inline-block">¿Por qué sale 0.02 ETH cada NFT? Hacer deploy de los contratos cuesta ETH, y algunos faucets solo dejan un pedido por día, así que es una buena forma de recaudar Fake ETH para seguir haciendo pruebas :D</span>{' '}
         <br/>
